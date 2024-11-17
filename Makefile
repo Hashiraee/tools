@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 VIRTUALENV ?= .venv
 
-.PHONY: help install freeze clean prompt install-aider aider clean-aider
+.PHONY: help install freeze clean prompt install-aider aider clean-aider test
 
 help:
 	@echo "Make targets:"
@@ -40,7 +40,10 @@ aider:
 	@. .aidervenv/bin/activate; aider
 
 clean-aider:
-	@rm -rf .aider.chat.history.md .aider.input.history .aider.tags.cache.v3
+	@rm -rf .aider.chat.history.md .aider.input.history .aider.llm.history .aider.tags.cache.v3
 
 run:
 	@. $(VIRTUALENV)/bin/activate; python3 src/main.py
+
+test:
+	@. $(VIRTUALENV)/bin/activate; python3 main.py
