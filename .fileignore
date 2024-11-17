@@ -1,0 +1,15 @@
+.gitignore
+.rgignore
+.fileignore
+.aiderignore
+.env
+.env.example
+
+.git
+.venv
+.aidervenv
+.aider*
+misc
+tools
+requirements.txt
+README.md

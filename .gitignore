@@ -1,0 +1,25 @@
+# Misc
+*.DS_Store
+
+# Environment variables
+.env
+.env.dev
+.env.local
+
+# Virtual Environments
+.env/
+env/
+.venv/
+venv/
+.aidervenv/
+
+# Cache
+*.pyc
+__pycache__/
+
+# Aider
+.aider*
+
+# Dev files
+.rgignore
+misc/
